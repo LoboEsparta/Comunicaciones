@@ -15,6 +15,8 @@ crossorigin="anonymous"></script>
         <script src="build/assets/app-d4b42df8.js"></script>
         <link rel="stylesheet" href="build/assets/app.css">
 
+        @vite(['resources/css/app.css'])
+
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
