@@ -32,7 +32,7 @@
             @endif
 
             <h3>
-                Aqui voy a hacer la prueba de la pagina web
+                Aqui voy a hacer la prueba de la pagina webgi
             </h3>
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
