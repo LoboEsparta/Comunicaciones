@@ -13,6 +13,47 @@ return new class extends Migration
     {
         Schema::create('radiouhfdos', function (Blueprint $table) {
             $table->id();
+
+            $table->string('Tierras');
+            $table->string('Respaldo');
+
+            $table->string('Antena');
+            $table->string('tabla1')->nullable();
+            $table->string('Cable')->nullable();
+            $table->string('tabla2')->nullable();
+            $table->string('Conectores')->nullable();
+            $table->string('tabla3')->nullable();
+            $table->string('Bocina')->nullable();
+            $table->string('tabla4')->nullable();
+            $table->string('Control')->nullable();
+            $table->string('tabla5')->nullable();
+            $table->string('Cabeza')->nullable();
+            $table->string('tabla6')->nullable();
+            $table->string('Terminal')->nullable();
+            $table->string('tabla7')->nullable();
+            $table->string('Cableado')->nullable();
+            $table->string('tabla8')->nullable();
+            $table->string('Fusible')->nullable();
+            $table->string('tabla9')->nullable();
+            $table->string('Portafusible')->nullable();
+            $table->string('tabla10')->nullable();
+            $table->string('Terminalb')->nullable();
+            $table->string('tabla11')->nullable();
+            $table->string('Cargadorbat')->nullable();
+            $table->string('tabla12')->nullable();
+            $table->string('Limpieza')->nullable();
+            $table->string('tabla13')->nullable();
+            $table->string('Bateria')->nullable();
+            $table->string('tabla14')->nullable();
+            
+            $table->string('textarea')->nullable();
+            $table->string('inspecciono');
+            $table->string('rpe');
+            $table->string('usuario');
+            $table->string('VoBo');
+
+
+
             $table->timestamps();
         });
     }

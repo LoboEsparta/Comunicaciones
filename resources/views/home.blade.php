@@ -12,7 +12,7 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
 crossorigin="anonymous"></script>
         <title>Comisión Federal de Electricidad</title>
-        <script src="build/assets/app-4c85f5d2.js"></script>
+        <script src="build/assets/app-d4b42df8.js"></script>
         <link rel="stylesheet" href="build/assets/app.css">
 
         <!-- Fonts -->

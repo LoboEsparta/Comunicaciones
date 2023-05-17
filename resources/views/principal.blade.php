@@ -2,7 +2,7 @@
   <!--ByJesusHilarioJuarezOrtiz-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="build/assets/app-4c85f5d2.js"></script>
+        <script src="build/assets/app-d4b42df8.js"></script>
         <link rel="stylesheet" href="build/assets/app.css">
         <link rel="icon" href="{{ asset('favicon.ico') }}">
         <title>Principal</title>

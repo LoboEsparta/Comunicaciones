@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('radios', function (Blueprint $table) {
             $table->id();
+
+            $table->string("Marca");
+            $table->string("Modelo");
+            $table->string("Serie");
+            $table->string("Economico");
+            $table->string("Responsable");
+            $table->string("Oficina");
+            $table->string("rpe");
+
             $table->timestamps();
         });
     }

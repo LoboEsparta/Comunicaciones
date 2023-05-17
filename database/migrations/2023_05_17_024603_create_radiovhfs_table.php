@@ -13,6 +13,48 @@ return new class extends Migration
     {
         Schema::create('radiovhfs', function (Blueprint $table) {
             $table->id();
+
+           
+            $table->string('area')->nullable();
+            $table->string('tipo')->nullable();
+
+            $table->date('fecha')->nullable();
+
+            $table->string('Movil')->nullable();
+            $table->string('Portatil')->nullable();
+            $table->string('Base')->nullable();
+            $table->string('Repetidor')->nullable();
+            $table->string('Otros')->nullable();
+
+            $table->string('Mantenimiento')->nullable();
+
+            $table->string('Ubicacion');
+            $table->string('Responsable');
+            $table->string('Oficina');
+            $table->string('Direccion');
+
+            $table->string('Marca')->nullable();
+            $table->string('Modelo')->nullable();
+            $table->string('Serie')->nullable();
+
+            $table->string('Potencia');
+            $table->string('Reflejo');
+            $table->string('Modulacion');
+            $table->string('Sensibilidad');
+            $table->string('Frec');
+            $table->string('Señal');
+            $table->string('RX');
+            $table->string('Tx');
+            $table->string('VCA');
+            $table->string('VCD');
+            $table->string('Cargador');
+            $table->string('Banco');
+            $table->string('Inversor'); 
+            
+            $table->string('Foto')->nullable();
+            $table->string('Fotodos')->nullable();
+            $table->string('Fototres')->nullable();
+            
             $table->timestamps();
         });
     }
