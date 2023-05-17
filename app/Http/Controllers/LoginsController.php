@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\logins;
+use App\Models\radiouhfs;
+use App\Models\radiouhfdos;
+use App\Models\radiovhfs;
 use Illuminate\Http\Request;
 
 class LoginsController extends Controller
@@ -10,9 +13,16 @@ class LoginsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    const PAGINACION = 10;
+    public function index(Request $request)
     {
-        //
+        $buscarpor = $request->get('buscarpor');
+        $datosvista = radiouhfs::where('tipo','=','UHF')->where('Serie','like','%'.$buscarpor.'%')->paginate($this::PAGINACION);
+        $buscar = $request->get('buscar');
+        $obtener = radiovhfs::where('tipo','=','VHF')->where('Serie','like','%'.$buscar.'%')->paginate($this::PAGINACION);
+        return view('vista', compact('datosvista','buscarpor','buscar','obtener'));
+        
+
     }
 
     /**
@@ -20,7 +30,7 @@ class LoginsController extends Controller
      */
     public function create()
     {
-        //
+    
     }
 
     /**
@@ -36,17 +46,22 @@ class LoginsController extends Controller
      */
     public function show(logins $logins)
     {
-        //
+       
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(logins $logins)
+    public function edit($id)
     {
-        //
+        $formatito=radiouhfdos::findOrFail($id);
+        $formato=radiouhfs::findOrFail($id);
+        return view('estructura', compact('formato','formatito')); 
+        
+        //Aqui se escribe el mismo nombre de la variable arriba
     }
 
+    
     /**
      * Update the specified resource in storage.
      */

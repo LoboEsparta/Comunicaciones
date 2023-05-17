@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\radios;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class RadiosController extends Controller
 {
@@ -12,7 +14,7 @@ class RadiosController extends Controller
      */
     public function index()
     {
-        //
+        return view ("radios");
     }
 
     /**
@@ -28,7 +30,11 @@ class RadiosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $datos = request()->except('_token');
+    
+            radios::insert($datos);
+            //return response()->json($datos);
+            return view('principal');
     }
 
     /**
